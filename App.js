@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={{ marginBottom: 20 }}>webtest {test}</Text>
-      <Button title="press me" onPress={() => setTest('hello')} />
+      <Button title="press me" onPress={() => setTest('hello!!')} />
     </View>
   );
 }
