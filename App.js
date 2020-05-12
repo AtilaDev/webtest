@@ -1,10 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
+  const [test, setTest] = React.useState('');
+
   return (
     <View style={styles.container}>
-      <Text>webtest</Text>
+      <Text style={{ marginBottom: 20 }}>webtest {test}</Text>
+      <Button title="press me" onPress={() => setTest('hello')} />
     </View>
   );
 }
